@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .item-a {
+                grid-area: header;
+                background-color: brown;
+                border: 1px;
+                }
+            .item-b {
+                grid-area: main;
+                background-color: blue;
+                border: 1px;
+            }
+            .item-c {
+                grid-area: sidebar;
+                background-color: red;
+                border: 1px;
+            }
+            .item-d {
+                grid-area: footer;
+                background-color: aqua;
+                border: 1px;
+            }
+
+            .container {
+                display: grid;
+                border-color: 1px solid black;
+                grid-template-columns: 150px 150px 150px 150px;
+                height: 500px;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "header header header header"
+                    "main main . sidebar"
+                    "footer footer footer footer"
+                    ;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item-a">header</div>
+            <div class="item-b">main</div>
+            <div class="item-c">sidebar</div>
+            <div class="item-d">footer</div>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+.outer-container{
+	display: flex;
+	flex-direction: column;
+	height: 45rem;
+	width:30rem;
+	background-color: grey;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+
+.calculator-heading{
+	display: flex;
+	height: 3rem;
+	width: 90%;
+	background-color: black;
+	/* margin-top:2rem; */
+	justify-content:center;
+	align-items: center;
+}
+
+.calculator-heading p{
+	color: white;
+	font-size:2rem
+}
+
+.display-result{
+	height: 8rem;
+	width: 90%;
+	background-color: white;
+	/* margin-top: 2rem; */
+	border-radius: 5px;
+}
+
+.key-white{
+	display: flex;
+	background-color: white;
+	border:1px solid grey;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.key-white-zero{
+	display: flex;
+	background-color: white;
+	border:1px solid grey;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+}
+
+.key-white-zero{
+	grid-column: 1/span 2;
+}
+
+.key-brown{
+	display: flex;
+	background-color: brown;
+	border:1px solid grey;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+} 
+
+.key-brown:hover{
+	background-color: yellow;
+}
+.key-white:hover{
+	background-color: yellow;
+}
+.key-white-zero:hover{
+	background-color: yellow;
+}
+
+.key-container{
+	display: grid;
+	grid-template-columns: 7rem 7rem 7rem 7rem;
+	grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
+	
+}
+
+/* .key-white{
+	grid-area: whitecolor;
+	background-color:white;
+}
+
+.key-brown{
+	grid-area: browncolor;
+	background-color: brown;
+}
+
+.key-container{
+	display: grid;
+	grid-template-areas: 
+		"whitecolor whitecolor whitecolor browncolor"
+		"whitecolor whitecolor whitecolor browncolor"
+		"whitecolor whitecolor whitecolor browncolor"
+		"whitecolor whitecolor whitecolor browncolor";
+	background-color: violet;
+	height: 50%;
+	width: 20%;
+	grid-gap: 10x;
+}*/
