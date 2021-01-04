@@ -31,8 +31,14 @@
 	/* margin-top: 2rem; */
 	border-radius: 5px;
 }
+.display-result p{
+	text-align: right;
+	font-size: 2rem;
+	margin: 5rem 1rem;
+}
 
-.key-white{
+ 
+.key{
 	display: flex;
 	background-color: white;
 	border:1px solid grey;
@@ -41,36 +47,21 @@
 	font-size: 2rem;
 }
 
-.key-white-zero{
-	display: flex;
-	background-color: white;
-	border:1px solid grey;
-	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
-}
-
-.key-white-zero{
+.white-zero{
 	grid-column: 1/span 2;
 }
 
-.key-brown{
-	display: flex;
+.brown{
 	background-color: brown;
-	border:1px solid grey;
-	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
 } 
 
-.key-brown:hover{
-	background-color: yellow;
+.white{
+	background-color:white
 }
-.key-white:hover{
+
+.key:hover{
 	background-color: yellow;
-}
-.key-white-zero:hover{
-	background-color: yellow;
+	border:none;
 }
 
 .key-container{
