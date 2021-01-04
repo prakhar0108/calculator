@@ -13,6 +13,11 @@ body{
 	
 }
 
+@media (max-width: 572px) {
+	.outer-container{
+		width:95%;
+	}
+}
 .calculator-heading{
 	display: flex;
 	height: 3rem;
@@ -70,30 +75,8 @@ body{
 
 .key-container{
 	display: grid;
-	grid-template-columns: 7rem 7rem 7rem 7rem;
+	grid-template-columns: 5rem 5rem 5rem 5rem;
 	grid-template-rows: 3rem 3rem 3rem 3rem 3rem;
+	box-sizing: border-box;
 	
 }
-
-/* .key-white{
-	grid-area: whitecolor;
-	background-color:white;
-}
-
-.key-brown{
-	grid-area: browncolor;
-	background-color: brown;
-}
-
-.key-container{
-	display: grid;
-	grid-template-areas: 
-		"whitecolor whitecolor whitecolor browncolor"
-		"whitecolor whitecolor whitecolor browncolor"
-		"whitecolor whitecolor whitecolor browncolor"
-		"whitecolor whitecolor whitecolor browncolor";
-	background-color: violet;
-	height: 50%;
-	width: 20%;
-	grid-gap: 10x;
-}*/
