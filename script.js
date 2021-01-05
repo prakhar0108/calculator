@@ -28,7 +28,12 @@ for(var i=0; i<buttons.length; i++){
 				operand1=parseFloat(display.textContent);
 				operand1=-1*operand1;
 				display.textContent=operand1;
-		     }
+			 }
+			 
+		else if(val=='C'){
+			var x=display.textContent;
+			display.textContent=x.slice(0,-1);
+		}
 		else if(val=="="){
 			operand2=parseFloat(display.textContent);
 
