@@ -13,9 +13,12 @@ for(var i=0; i<buttons.length; i++){
 
 
 		
-		if(val=="+"||val=="-"||val=="*"||val=="/"||val=="%"){
+		if(val=="+"||val=="-"||val=="*"||val=="÷"||val=="%"){
 			if(val=="%"){
 				operator='*0.01*';
+			}
+			else if(val=="÷"){
+				operator='/';
 			}
 			else{
 				operator=val;
