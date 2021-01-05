@@ -48,6 +48,7 @@ body{
 }
 
 .display-result{
+	position: relative;
 	height: 8rem;
 	width: 90%;
 	background-color: white;
@@ -60,6 +61,13 @@ body{
 	text-align: right;
 	font-size: 2rem;
 	margin: 5rem 1rem;
+}
+
+#display-heading{
+	position: absolute;
+	text-align: top;
+	margin: 0 0 5rem 0;
+	font-size:1rem;
 }
 
  

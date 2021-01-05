@@ -1,5 +1,6 @@
 var buttons=document.getElementsByClassName("key");
 var display=document.getElementById("display");
+var expDisplay=document.getElementById("display-heading");
 
 var operand1=0;
 var operand2="";
@@ -41,6 +42,7 @@ for(var i=0; i<buttons.length; i++){
 			operand2=parseFloat(display.textContent);
 
 			display.innerText=eval(operand1+operator+operand2);
+			expDisplay.innerText=display.innerText;
 		}
 		
 		else if(val=="AC"){
@@ -49,6 +51,14 @@ for(var i=0; i<buttons.length; i++){
 
 		else{
 			display.innerText+=val;
+		}
+
+		if(val=="AC"){
+			expDisplay.innerText="";
+		}
+		else if(val!='C' && val!='='){
+
+		expDisplay.innerText+=val;
 		}
 
 	});
