@@ -61,6 +61,7 @@ body{
 	border-radius: 5px;
 	border: 2px solid rgb(236, 206, 206);
 	box-shadow:2px 2px 10px 5px rgb(71, 68, 68);
+	overflow: auto;
 }
 .display-result p{
 	text-align: right;
@@ -68,9 +69,6 @@ body{
 	margin: 5rem 1rem;
 }
 
-#display{
-	overflow: auto;
-}
 
 #display-heading{
 	position: absolute;
