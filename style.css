@@ -6,6 +6,11 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
+#author{
+	color:white;
+	/* margin-top:2rem; */
+}
 .outer-container{
 	display: flex;
 	flex-direction: column;
