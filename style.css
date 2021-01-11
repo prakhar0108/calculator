@@ -68,6 +68,10 @@ body{
 	margin: 5rem 1rem;
 }
 
+#display{
+	overflow: auto;
+}
+
 #display-heading{
 	position: absolute;
 	text-align: top;
