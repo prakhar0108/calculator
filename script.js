@@ -6,6 +6,7 @@ var operand1=0;
 var operand2="";
 var operator=null;
 var x=null;
+var y=null;
 
 for(var i=0; i<buttons.length; i++){
 	buttons[i].addEventListener('click', function(){
@@ -32,6 +33,7 @@ for(var i=0; i<buttons.length; i++){
 				operand1=parseFloat(display.textContent);
 				operand1=-1*operand1;
 				display.textContent=operand1;
+				expDisplay.innerText=operand1
 			 }
 			 
 		else if(val=='C'){
@@ -56,10 +58,17 @@ for(var i=0; i<buttons.length; i++){
 		if(val=="AC"){
 			expDisplay.innerText="";
 		}
-		else if(val!='C' && val!='='){
+		else if(val!='C' && val!='=' && val!=="+/-"){
 
 		expDisplay.innerText+=val;
 		}
+		else if(val=="C"){
+			var y=expDisplay.textContent;
+			expDisplay.innerText=y.slice(0,-1);
+		}
+		// else if(val=="+/-"){
+		// 	expDisplay.innerText=-1* parseFloat(display.textContent);
+		// }
 
 	});
 }
